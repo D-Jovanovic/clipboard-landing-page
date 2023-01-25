@@ -1,0 +1,31 @@
+.introductory__content {
+  border: 1px solid green;
+  margin-top: 12rem;
+
+  .logo {
+    display: block;
+    margin: auto;
+
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: 6rem;
+  }
+
+  .heading {
+    text-align: center;
+
+    &__primary {
+      margin-bottom: 2rem;
+      color: var(--color-dark-gray);
+    }
+
+    &__secondary {
+      color: var(--color-gray);
+      margin-bottom: 6rem;
+    }
+  }
+
+  .btn__download {
+    text-align: center;
+  }
+}

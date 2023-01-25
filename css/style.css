@@ -1,3 +1,23 @@
+.introductory__content {
+  border: 1px solid green;
+  margin-top: 12rem; }
+  .introductory__content .logo {
+    display: block;
+    margin: auto;
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: 6rem; }
+  .introductory__content .heading {
+    text-align: center; }
+    .introductory__content .heading__primary {
+      margin-bottom: 2rem;
+      color: var(--color-dark-gray); }
+    .introductory__content .heading__secondary {
+      color: var(--color-gray);
+      margin-bottom: 6rem; }
+  .introductory__content .btn__download {
+    text-align: center; }
+
 body {
   font-size: 1.8rem;
   font-family: "Bai Jamjuree", sans-serif;
@@ -20,4 +40,6 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 144rem; }
