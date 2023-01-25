@@ -10,13 +10,29 @@
   .introductory__content .heading {
     text-align: center; }
     .introductory__content .heading__primary {
-      margin-bottom: 2rem;
+      font-size: 3.9rem;
+      margin-bottom: 3rem;
       color: var(--color-dark-gray); }
-    .introductory__content .heading__secondary {
-      color: var(--color-gray);
-      margin-bottom: 6rem; }
+      .introductory__content .heading__primary--description {
+        margin-top: 2rem;
+        display: block;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 1.6; }
   .introductory__content .btn__download {
     text-align: center; }
+    .introductory__content .btn__download--iOS:link, .introductory__content .btn__download--iOS:visited {
+      text-decoration: none;
+      background-color: var(--color-primary-cyan);
+      padding: 1rem 2rem;
+      color: #fff;
+      border-radius: 1000px; }
+    .introductory__content .btn__download--Mac:link, .introductory__content .btn__download--Mac:visited {
+      text-decoration: none;
+      background-color: var(--color-primary-blue);
+      padding: 1rem 2rem;
+      color: #fff;
+      border-radius: 1000px; }
 
 body {
   font-size: 1.8rem;
