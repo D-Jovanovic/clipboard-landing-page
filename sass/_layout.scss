@@ -71,6 +71,7 @@
   margin-top: var(--margin-top);
 
   .track {
+    /*
     &__heading-container {
       max-width: 100rem;
       text-align: center;
@@ -88,6 +89,7 @@
         line-height: 1.6;
       }
     }
+*/
   }
 
   .track__info-container {
@@ -122,5 +124,38 @@
         color: var(--color-gray);
       }
     }
+  }
+
+  .access {
+    margin-top: var(--margin-top);
+    // text-align: center; //center img
+    .img-wrap {
+      margin-top: 6rem;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+/*****************/
+/*****GLOBAL*****/
+/*****************/
+
+//h2 Element
+.heading-container {
+  max-width: 100rem;
+  text-align: center;
+  margin: 0 auto;
+
+  & h2 {
+    color: var(--color-dark-gray);
+  }
+
+  & p {
+    margin-top: 2rem;
+    color: var(--color-gray);
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.6;
   }
 }
