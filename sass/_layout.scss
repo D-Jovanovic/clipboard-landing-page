@@ -1,5 +1,4 @@
 .introductory__content {
-  border: 1px solid green;
   margin-top: 12rem;
 
   .logo {
@@ -32,24 +31,37 @@
   }
 
   .btn__download {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
 
-    &--iOS:link,
-    &--iOS:visited {
+    //implement 3d btn efect, and click
+    .btn {
       text-decoration: none;
-      background-color: var(--color-primary-cyan);
       padding: 1rem 2rem;
       color: #fff;
       border-radius: 1000px;
+      box-shadow: -1px 1px 20px 3px rgba(0, 0, 0, 0.33);
+    }
+
+    &--iOS:link,
+    &--iOS:visited {
+      background-color: var(--color-primary-cyan);
+    }
+
+    &--iOS:hover,
+    &--iOS:active {
+      background-color: var(--color-primary-cyan);
     }
 
     &--Mac:link,
     &--Mac:visited {
-      text-decoration: none;
       background-color: var(--color-primary-blue);
-      padding: 1rem 2rem;
-      color: #fff;
-      border-radius: 1000px;
+    }
+
+    &--Mac:hover,
+    &--Mac:active {
+      background-color: var(--color-primary-blue);
     }
   }
 }

@@ -1,5 +1,4 @@
 .introductory__content {
-  border: 1px solid green;
   margin-top: 12rem; }
   .introductory__content .logo {
     display: block;
@@ -20,19 +19,23 @@
         font-size: 1.8rem;
         line-height: 1.6; }
   .introductory__content .btn__download {
-    text-align: center; }
+    display: flex;
+    justify-content: center;
+    gap: 2rem; }
+    .introductory__content .btn__download .btn {
+      text-decoration: none;
+      padding: 1rem 2rem;
+      color: #fff;
+      border-radius: 1000px;
+      box-shadow: -1px 1px 20px 3px rgba(0, 0, 0, 0.33); }
     .introductory__content .btn__download--iOS:link, .introductory__content .btn__download--iOS:visited {
-      text-decoration: none;
-      background-color: var(--color-primary-cyan);
-      padding: 1rem 2rem;
-      color: #fff;
-      border-radius: 1000px; }
+      background-color: var(--color-primary-cyan); }
+    .introductory__content .btn__download--iOS:hover, .introductory__content .btn__download--iOS:active {
+      background-color: var(--color-primary-cyan); }
     .introductory__content .btn__download--Mac:link, .introductory__content .btn__download--Mac:visited {
-      text-decoration: none;
-      background-color: var(--color-primary-blue);
-      padding: 1rem 2rem;
-      color: #fff;
-      border-radius: 1000px; }
+      background-color: var(--color-primary-blue); }
+    .introductory__content .btn__download--Mac:hover, .introductory__content .btn__download--Mac:active {
+      background-color: var(--color-primary-blue); }
 
 body {
   font-size: 1.8rem;
@@ -58,4 +61,6 @@ html {
 body {
   box-sizing: border-box;
   margin: 0 auto;
-  max-width: 144rem; }
+  background-image: url(../images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
