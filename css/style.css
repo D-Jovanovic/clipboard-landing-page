@@ -40,21 +40,39 @@
 
 .main__container {
   margin-top: var(--margin-top); }
-  .main__container .track {
-    border: 1px solid blue; }
-    .main__container .track__heading-container {
-      border: 1px solid red;
-      max-width: 100rem;
-      text-align: center;
-      margin: 0 auto; }
-      .main__container .track__heading-container .heading__secondary {
-        color: var(--color-dark-gray); }
-      .main__container .track__heading-container .track__description {
-        margin-top: 2rem;
-        color: var(--color-gray);
+  .main__container .track__heading-container {
+    max-width: 100rem;
+    text-align: center;
+    margin: 0 auto; }
+    .main__container .track__heading-container .heading__secondary {
+      color: var(--color-dark-gray); }
+    .main__container .track__heading-container .track__description {
+      margin-top: 2rem;
+      color: var(--color-gray);
+      font-weight: 400;
+      font-size: 1.8rem;
+      line-height: 1.6; }
+  .main__container .track__info-container {
+    margin-top: 6rem;
+    display: flex;
+    gap: 10rem; }
+    .main__container .track__info-container > img {
+      margin-left: -5rem; }
+    .main__container .track__info-container .track__info-features {
+      margin-top: 10rem;
+      display: flex;
+      flex-direction: column;
+      gap: 5rem; }
+      .main__container .track__info-container .track__info-features .responsive_img {
+        max-width: 100%;
+        height: auto; }
+      .main__container .track__info-container .track__info-features--mod h3 {
+        margin-bottom: 1.5rem; }
+      .main__container .track__info-container .track__info-features--mod p {
         font-weight: 400;
         font-size: 1.8rem;
-        line-height: 1.6; }
+        line-height: 1.6;
+        color: var(--color-gray); }
 
 body {
   font-size: 1.8rem;
@@ -83,4 +101,4 @@ body {
   margin: 0 auto;
   background-image: url(../images/bg-header-desktop.png);
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: 100%; }
