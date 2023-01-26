@@ -1,5 +1,5 @@
 .introductory__content {
-  margin-top: 12rem;
+  margin-top: var(--margin-top);
 
   .logo {
     display: block;
@@ -26,6 +26,7 @@
         font-weight: 400;
         font-size: 1.8rem;
         line-height: 1.6;
+        color: var(--color-gray);
       }
     }
   }
@@ -62,6 +63,33 @@
     &--Mac:hover,
     &--Mac:active {
       background-color: var(--color-primary-blue);
+    }
+  }
+}
+
+.main__container {
+  margin-top: var(--margin-top);
+
+  .track {
+    border: 1px solid blue;
+
+    &__heading-container {
+      border: 1px solid red;
+      max-width: 100rem;
+      text-align: center;
+      margin: 0 auto;
+
+      .heading__secondary {
+        color: var(--color-dark-gray);
+      }
+
+      .track__description {
+        margin-top: 2rem;
+        color: var(--color-gray);
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 1.6;
+      }
     }
   }
 }

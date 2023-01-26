@@ -1,5 +1,5 @@
 .introductory__content {
-  margin-top: 12rem; }
+  margin-top: var(--margin-top); }
   .introductory__content .logo {
     display: block;
     margin: auto;
@@ -17,7 +17,8 @@
         display: block;
         font-weight: 400;
         font-size: 1.8rem;
-        line-height: 1.6; }
+        line-height: 1.6;
+        color: var(--color-gray); }
   .introductory__content .btn__download {
     display: flex;
     justify-content: center;
@@ -37,6 +38,24 @@
     .introductory__content .btn__download--Mac:hover, .introductory__content .btn__download--Mac:active {
       background-color: var(--color-primary-blue); }
 
+.main__container {
+  margin-top: var(--margin-top); }
+  .main__container .track {
+    border: 1px solid blue; }
+    .main__container .track__heading-container {
+      border: 1px solid red;
+      max-width: 100rem;
+      text-align: center;
+      margin: 0 auto; }
+      .main__container .track__heading-container .heading__secondary {
+        color: var(--color-dark-gray); }
+      .main__container .track__heading-container .track__description {
+        margin-top: 2rem;
+        color: var(--color-gray);
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 1.6; }
+
 body {
   font-size: 1.8rem;
   font-family: "Bai Jamjuree", sans-serif;
@@ -53,7 +72,8 @@ body {
   --color-primary-cyan: hsl(171, 66%, 44%);
   --color-primary-blue: hsl(233, 100%, 69%);
   --color-dark-gray: hsl(210, 10%, 33%);
-  --color-gray: hsl(201, 11%, 66%); }
+  --color-gray: hsl(201, 11%, 66%);
+  --margin-top: 12rem; }
 
 html {
   font-size: 62.5%; }
